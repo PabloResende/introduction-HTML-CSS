@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>audio</title>
+</head>
+<body>
+    <h1>como por audios em um site</h1>
+    <audio src="Para de mandar áudio eu tô na Ucrânia olha a pomba.mp3" controls autoplay></audio>
+    <h2>outros formatos</h2>
+    <!-- o preload auto é 'perigoso' em casos de arquivos de áudio muito grandes, nesses casos é melhor usar o metadata tbm tem um loop, que pode ser usado após autoplay-->
+    <audio preload="auto" autoplay controls>
+        <source src="On The Rocks - TrackTribe.mp3" type="audio/mpeg">
+        </audio>
+        <h3>também têm wav e ogg</h3>
+    </audio>
+</body>
+</html>
