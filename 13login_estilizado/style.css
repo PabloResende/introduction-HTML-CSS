@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(45deg, cyan, yellow); /* cria um efeito de fundo com gradiência */
+}
+
+div {
+    background-color: rgba(0, 0, 0, 0.8); /* aqui fica o efeito do fundo dos elementos de login
+    o RGBA retorna uma cor com base nas cores verde, vermelho e azul */
+    position: absolute; /* faz com que o elemento fique com o tamanho de um outro elemento , o 'pai' */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*  mover este elemento para a esquerda e para cima em 50% da dimensão calculada ao longo do eixo */
+    padding: 50px; /* tamanho do elemento em si, todas as direções */
+    border-radius: 15px; /*formato da borda, nesse caso, pra ficar redondinha  */
+    color: white;
+    
+}
+
+input {
+    padding: 10px;
+    border: none;
+    outline: none; /* linha de fora, nesse caso, tira a linha de fora */
+    font-size: 15px; /* tamanho da fonte */
+}
+
+button {
+    background-color: dodgerblue; /*  */
+    border: none;
+    padding: 15px;
+    border-radius: 10px; /*  */
+    width: 100%; /* para ter ocupar 100% do tamanho dos outros elementos */
+    color: white;
+    font-size: 15px;
+}
+
+button:hover { /* para selecionar elementos a aconter quando o mouse passar por cima */
+    cursor: pointer; /* para aconter algo quando o cursos passar por cima */
+    background-color: deepskyblue; /* nesse caso faz ele mudar de cor */
+}
