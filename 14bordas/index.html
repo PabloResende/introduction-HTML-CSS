@@ -10,12 +10,24 @@
             border: 15px groove red;
         }
         /* groove é um estilo de borda */
+        #outro {
+            border-color: red green yellow blue;
+            /* cores são aplicadas em sentido horário */
+            border-width: 15px 5px 15px 5px;
+            /* também é aplicado em sentido horário */
+            border-style: outset groove;
+            /* porém quando apenas dois tipos são usados, é então definido
+            como sendo o primeiro aplicado em cima e embaixo, e o segundo nas laterais */
+        }
     </style>
 </head>
 
 <body>
     <div id="conteudo">
         borda vermelha 3D
+    </div><br>
+    <div id="outro">
+        borda doida
     </div>
 </body>
 
