@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: linear-gradient(45deg,rgb(60, 60, 245), rgb(248, 248, 86));
+    background-image: linear-gradient(45deg, rgb(60, 60, 245), rgb(248, 248, 86));
     font-family: 'Times New Roman', Times, serif;
     font-size: 1em;
 }
@@ -17,6 +17,30 @@ body {
     text-align: center;
     padding: 5px;
 }
-#area-logo, #area-menu {
+
+a{
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: #fff;
+    padding: 8px 12px;
+}
+a:hover {
+    color: orange;
+    background-color: #fff;
+}
+
+#area-logo,
+#area-menu {
     padding: 10px;
+}
+
+h1 {
+    color: #4e4e4e;
+    font-size: 2.2em;
+}
+
+.branco {
+    color: white;
 }
