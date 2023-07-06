@@ -1,0 +1,22 @@
+/* '*' quer dizer tudo, nesse caso abaixo será feita
+    uma limpeza na formatação padrão
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(45deg,rgb(60, 60, 245), rgb(248, 248, 86));
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+}
+
+#area-cabecalho {
+    background-color: yellow;
+    text-align: center;
+    padding: 5px;
+}
+#area-logo, #area-menu {
+    padding: 10px;
+}
