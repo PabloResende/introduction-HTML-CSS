@@ -1,48 +1,46 @@
-/**************************************
-Seletor universal
+
+/* Seletor universal */
 * {
 	border: 1px solid red;
 }
-/**************************************
-Seletor de texto
+
+/* Seletor de texto */
 h1 {
 	color: green;
 }
-/**************************************
-Seletor de classe
+
+/* Seletor de classe */
 .verde {
 	color: green;
 }
-/**************************************
-Seletor de classe
+/* Seletor de classe */
 p.verde {
 	color: green;
 }
 
-**************************************
-Seletor de ID
+/* Seletor de ID */
 #cabecalho {
 	border: 1px solid blue;
 	}
-**************************************
-Seletor de filho
+
+/* Seletor de filho */
 li>a {
 	color: red;
 	text-decoration: none;
 }
-**************************************
-Seletor de descendente
+
+/* Seletor de descendente */
 p a {
 	color: green;
 }
 
-**************************************
-Seletor de irmão adjacente
+
+/* Seletor de irmão adjacente */
 h1+p {
 	color: red;
 }
-**************************************
-Seletor de irmão geral*/
+
+/* Seletor de irmão geral*/ */
 h1~p {
 	color: pink;
 }
