@@ -63,6 +63,15 @@ a{
     text-decoration: none;
 }
 
+a:link,
+a:visited {
+    color: orange;
+}
+a:hover {
+    
+    text-decoration: underline;
+}
+
 #area-cabecalho a:link, 
 #area-cabecalho a:visited {
     color: #fff;
@@ -71,6 +80,7 @@ a{
 #area-cabecalho a:hover {
     color: orange;
     background-color: #fff;
+    text-decoration: none;
 }
 
 h1 {
