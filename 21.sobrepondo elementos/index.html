@@ -1,0 +1,40 @@
+<!-- 
+    a propriedade z-index faz com que o elemento com maior número ficar na frente
+    exemplo: z-index 1 fica na frente de outro elemento q não tem z-index ou que tem z-index 0
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sobreponod elementos</title>
+    <style>
+        .conteudo {
+            background-color: orange;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            z-index: 1;
+        }
+        .conteudo1 {
+            background-color: blue;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 80px;
+            left: 80px;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteudo">
+        conteudo
+    </div>
+    <div class="conteudo1">
+        conteudo
+    </div>
+</body>
+</html>
