@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: linear-gradient(45deg, rgb(60, 60, 245), rgb(248, 248, 86));
+    background-color: #fff;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1em;
 }
@@ -32,8 +32,21 @@ body {
     margin: 0 auto;
 }
 
-#area-postagens, #area-lateral {
-    background-color: orange;
+#area-lateral {
+    width: 240px;
+    float: right;
+}
+
+.area-lateral {
+    background-color: white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.postagem-lateral {
+    font-size: 1em;
+    padding: 15px;
 }
 
 #area-postagens {
@@ -47,14 +60,9 @@ body {
     background-color: white;
 }
 
-#area-lateral {
-    width: 240px;
-    float: right;
-}
 
 #rodape {
     clear: both;
-    background-color: #ccc;
     text-align: center;
     padding: 15px;
 }
@@ -90,6 +98,13 @@ h1 {
 
 h2 {
     color: orange;
+}
+
+h3 {
+    color: #565656;
+    background-color: #ccc;
+    padding: 5px;
+    margin-top: 20px;
 }
 
 .branco {
