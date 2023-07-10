@@ -21,3 +21,18 @@ a:hover {
     color: white;
 }
 
+#home #navegacao .home a,
+#sobre #navegacao .sobre a,
+#contato #navegacao .contato a,
+#servicos #navegacao .servicos a{
+    background-position: right bottom;
+    background-color: #f99200;
+    color: white;
+}
+
+/*
+    explicando, em home por exemplo, é definida um id pro body,
+    o id leva o nome da página, em seguida é colocado 'navegacao' para
+    evitar erros, e então é criada uma classe que também leva o nome da página e por ultima o 'a' que indica que todas essas regras se aplicam ao link
+    
+*/
