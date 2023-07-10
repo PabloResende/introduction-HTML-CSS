@@ -34,5 +34,6 @@ a:hover {
     explicando, em home por exemplo, é definida um id pro body,
     o id leva o nome da página, em seguida é colocado 'navegacao' para
     evitar erros, e então é criada uma classe que também leva o nome da página e por ultima o 'a' que indica que todas essas regras se aplicam ao link
-    
+    o resultado é que irá ficar na cor escolhida toda vez q o user estiver dentro de uma das páginas, como um efeito de hover porém permanente
+
 */
