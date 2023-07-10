@@ -1,3 +1,21 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul a {
+    border:  1px solid red;
+    display: block;
+    width: 200px;
+    height: 40px;
+    background: url(img/menu.png) no-repeat left bottom;
+}
+
+a:hover {
+    background-position: right bottom;
+}
+
 /* ul {
     list-style-type: none;
     margin: 0;
