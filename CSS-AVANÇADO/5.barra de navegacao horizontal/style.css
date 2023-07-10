@@ -1,6 +1,5 @@
 ul {
     background: #159cb0 url(img/fundo-horizontal.png) repeat-x;
-    border: 1px solid red;
     width: 720px;
     margin: 0;
     padding: 0;
@@ -10,6 +9,30 @@ ul {
 
 ul li {
     float: left;
-    line-height: 2em;
-    padding: 0 2em;
 }
+
+ul a {
+    display: block;
+    text-decoration: none;
+    padding: 0 2em;
+    line-height: 2em;
+    color: #fff;
+    background: url(img/divisor.png) repeat-y left;
+}
+
+ul .primeiro a {
+    background: none;
+}
+
+a:hover {
+    background-color: #159cb0;
+    color: #000;
+}
+
+#home .home a,
+#servicos .servicos a,
+#contato .contato a,
+#sobre .sobre a{
+    background-color: #159cb0;
+    color: #000;
+}   
