@@ -10,6 +10,8 @@ ul a {
     width: 200px;
     height: 40px;
     background: url(img/menu.png) no-repeat left bottom;
+    text-decoration: none;
+    line-height : 40px;
 }
 
 a:hover {
