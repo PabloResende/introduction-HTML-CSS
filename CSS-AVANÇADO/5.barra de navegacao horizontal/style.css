@@ -1,0 +1,15 @@
+ul {
+    background: #159cb0 url(img/fundo-horizontal.png) repeat-x;
+    border: 1px solid red;
+    width: 720px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: left;
+}
+
+ul li {
+    float: left;
+    line-height: 2em;
+    padding: 0 2em;
+}
