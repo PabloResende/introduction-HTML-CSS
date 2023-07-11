@@ -11,10 +11,44 @@ body {
 #container {
     width: 720px;
     margin: 0 auto;
+    border: 1px solid red;
 }
 
 #topo {
     height: 150px;
     background: url(img/detalhe-topo.png) no-repeat right top;
-    padding-top: 25px;
+    padding: 30px;
+}
+
+.logo {
+    width: 152px;
+    height: 66px;
+    background: url(img/logo.png);
+    text-indent: -3000px;
+    margin-bottom: 30px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#topo ul{
+    float: left;
+    background: #b10333;
+    margin-top: 30px;
+}
+
+#topo ul li {
+    float: left;
+}
+
+
+#topo ul a {
+    font-size: 0.9em;
+    padding: 0.5em 1.5em;
+    text-decoration: none;
+    color: #fff;
+    display: block;
 }
