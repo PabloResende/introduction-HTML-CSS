@@ -19,14 +19,17 @@ body {
     padding: 40px;
 }
 
+#topo ul a:hover {
+    color: #69001d;
+}
+
+
 .logo {
     width: 152px;
     height: 66px;
     background: url(img/logo.png);
     text-indent: -3000px;
     margin-bottom: 20px;
-    border: 1px solid red;
-
 }
 
 ul {
@@ -58,4 +61,14 @@ ul {
 
 #topo ul .primeiro a {
     background: none;
+}
+
+body.home #navegacao a#home,
+body.brasil #navegacao a#brasil,
+body.internacional #navegacao a#internacional,
+body.fotos #navegacao a#fotos
+{
+    color: fff;
+    background: #de003e;
+    cursor: text;
 }
