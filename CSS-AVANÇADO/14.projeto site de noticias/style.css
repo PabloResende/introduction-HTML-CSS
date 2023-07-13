@@ -9,15 +9,14 @@ body {
 }
 
 #container {
-    width: 720px;
+    width: 800px;
     margin: 0 auto;
-    border: 1px solid red;
 }
 
 #topo {
     height: 150px;
     background: url(img/detalhe-topo.png) no-repeat right top;
-    padding: 30px;
+    padding: 40px;
 }
 
 .logo {
@@ -25,7 +24,9 @@ body {
     height: 66px;
     background: url(img/logo.png);
     text-indent: -3000px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    border: 1px solid red;
+
 }
 
 ul {
@@ -38,6 +39,7 @@ ul {
     float: left;
     background: #b10333;
     margin-top: 30px;
+    padding: 10px 0px;
 }
 
 #topo ul li {
@@ -51,4 +53,9 @@ ul {
     text-decoration: none;
     color: #fff;
     display: block;
+    background: url(img/divisor.png) no-repeat left center;
+}
+
+#topo ul .primeiro a {
+    background: none;
 }
