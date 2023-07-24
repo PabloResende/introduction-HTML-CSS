@@ -1,0 +1,49 @@
+body {
+    background: #fff;
+}
+
+div {
+    color: #fff;
+    width: 20rem;
+    height: 20rem;
+    background: radial-gradient(
+        circle at 33% 100%,
+        #fed373 4%,
+        #f15245 30%,
+        #d92e7f 62%,
+        #9b36b7 85%,
+        #515ecf
+    );
+    border-radius: 30%;
+    position: relative;
+}
+
+div::before {
+    content: " ";
+    border: 1rem solid;
+    border-radius: 30%;
+    width: 12.5rem;
+    height: 12.5rem;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+}
+
+div::after {
+    content: " ";
+    border: 1rem solid;
+    border-radius: 100%;
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+}
+
+span {
+    border: 1rem solid;
+    position: absolute;
+    border-radius: 100%;
+    top: 5rem;
+    right: 5rem;
+}
