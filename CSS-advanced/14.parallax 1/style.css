@@ -18,3 +18,19 @@ body, html {
     height: 100%;
 }
 
+/* efeito parallax */
+.caixa1, .caixa2 {
+    border: 1px solid red;
+    height: 100%;
+}
+
+.caixa1 {
+    background-image: url(img/imagem1.jpg);
+}
+
+.caixa2 {
+    background-image: url(img/imagem2.jpg);
+}
+.caixa3 {
+    background-image: url(img/imagem3.jpg);
+}
