@@ -1,0 +1,31 @@
+#conteudo {
+background: #DCDCDC;
+height: 400PX;
+display: flex;
+flex-direction: row;
+/* outras propriedades do flex são: 
+row-reverse, column, column-reverse
+*/
+flex-wrap: no-wrap;
+/* outras propriedades do flex-wrap são:display: 
+nowrap, wrap e wrap-reverse
+*/
+justify-content: space-between;
+/* outras propriedades são:
+flex-start, flex-end, center, space-between, space-around
+*/
+align-items: center;
+/* outras propriedades são:
+stretch, center, flex-start, base-line
+*/
+
+}
+
+
+.item {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background: white;
+    border: 1px solid gray;
+}
