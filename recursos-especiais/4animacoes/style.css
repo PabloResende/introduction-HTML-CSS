@@ -1,0 +1,66 @@
+@keyframes animacao-caixa {
+    from {
+        background: red;
+        top: 200px;
+        left: 200px;
+    }
+    to{
+        background: purple;
+        top: 0;
+        left: 0;
+       
+    }
+}
+
+@keyframes animacao-caixa2 {
+    from {
+        background: purple;
+        border-radius: 0px;
+    }
+    to{
+        background: red;
+        border-radius: 300px;
+    }
+}
+
+@keyframes animacao-caixa3 {
+    from {
+        background: purple;
+        border-radius: 0px;
+    }
+    to{
+        background: red;
+        border-radius: 300px;
+    }
+}
+
+#caixa {
+    width: 300px;
+    height: 300px;
+    background: red;
+    animation-name: animacao-caixa;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-iteration-count: 2;
+    animation-direction: reverse;
+    position: relative;
+    animation-iteration-count: alternate;
+}
+
+#caixa2 {
+    width: 300px;
+    height: 300px;
+    background: red;
+    animation-name: animacao-caixa2;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+}
+
+#caixa3 {
+    width: 300px;
+    height: 300px;
+    background: red;
+    /* também é possível fazer quase tudo em uma linha */
+    animation: animacao-caixa3 5s 3s 2 alternate;
+    /* primeiro o nome da animção, depois o tempo, ai o delay pra começar, uma iteração */
+}
