@@ -1,15 +1,12 @@
 body {
     background: #000;
 }
-
-
 div {
     width: 50px;
     height: 250px;
     background: #b20710;
     position: relative;
 }
-
 div::before {
     content: " ";
     width: 50px;
@@ -18,7 +15,6 @@ div::before {
     position: absolute;
     left: 90px;
 }
-
 div::after {
     content: " ";
     width: 175px;
@@ -29,7 +25,6 @@ div::after {
     left: -15px;
     border-radius: 50%;
 }
-
 span {
     width: 50px;
     height: 250px;
