@@ -13,7 +13,7 @@ ul {
 }
 
 ul a {
-    display: block;
+    display: block; 
     width: 200px;
     height: 40px;
     background: #f7b600 url(img/menu.png) no-repeat left bottom;
