@@ -1,0 +1,31 @@
+/* 
+    os elementos tem uma relação de herança em cascata, onde o body por exemplo diz certas regras que valem pros elementos dentro dele, porém nem todas essas regras são herdada,
+    por exemplo border e cascata 
+*/
+
+
+ 
+    /* em caso de duas class iguais, a ultima que será validade, exemplo: */
+
+    p {
+        color: red;
+    } /* isso é um seletor */ 
+
+    p{
+        color: blue;
+    }
+
+/* 
+    o paragrafo ficará azul
+
+    tem como resolver isso, muito simples, você pode adicionar ao final, !important
+    outra forma de resolver isso seria especificando:
+*/
+
+    #texto1 p{
+        color: aqua;
+    }
+
+    p {
+        color: white;
+    }

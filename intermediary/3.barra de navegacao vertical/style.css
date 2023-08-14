@@ -1,0 +1,41 @@
+/* 
+    aqui estão duas formas de se criar de fazer um menu que muda de cor,
+    uma delas é usar uma imagem que contenha metade de uma cor e metade de outra,
+    assim ao utilizar o método hover a imagem apenas se move.
+    porém é importante por as mesmas cores de fundo pra caso a imagem não carregue
+*/
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul a {
+    display: block; 
+    width: 200px;
+    height: 40px;
+    background: #f7b600 url(img/menu.png) no-repeat left bottom;
+    text-decoration: none;
+    line-height : 40px;
+    text-indent: 40px;
+    color: black;
+}
+
+a:hover {
+    background-position: right bottom;
+    color: white;
+    background-color: #f99200;
+}
+
+/* ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    background: url(img/seta.png) no-repeat left center;
+    padding-left: 20px;
+} */
