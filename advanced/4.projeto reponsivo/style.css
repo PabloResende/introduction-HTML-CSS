@@ -1,42 +1,99 @@
-* {
+
+* { /* Reset de margens e preenchimentos para garantir consistência */
     margin: 0;
     padding: 0;
-}
-
-.container {
+    box-sizing: border-box; /* " A propriedade box-sizing é usada para controlar como o tamanho total de um elemento é calculado, levando em consideração suas margens, bordas e preenchimentos " */
+  }
+  
+  /* Estilo básico para o corpo do documento */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilo do container principal */
+  #container {
+    display: grid; /* Define o elemento #container como um grid layout */
+    grid-template-columns: 1fr 250px; /* Define duas colunas: conteúdo principal e barra lateral */
+    grid-template-rows: auto auto 1fr auto; /* Define as linhas para cabeçalho, barra lateral, conteúdo e rodapé */
+    min-height: 100vh; /* Garante que o conteúdo ocupe pelo menos a altura da tela */
+    gap: 10px; /* Define o espaçamento entre os elementos do grid */
+  }
+  
+  /* Estilo do cabeçalho */
+  .header {
+    background: #333;
+    color: white;
+    height: 60px;
+    grid-column: 1 / span 2; /* O cabeçalho ocupa duas colunas do grid */
+  }
+  
+  /* Estilo da barra lateral */
+  .sideBar {
+    background: #ddd;
+  }
+  
+  /* Estilo do conteúdo principal */
+  .content1 {
     display: flex;
-    position: relative;
-}
-
-.header {
-    width: 100%;
-    height: 40px;
-    flex-direction: row;
-    background: green;
-    position: fixed;
-    z-index: 10;
-}
-.sideBar {
-    width: 80px;
-    height: 100%;
-    background: red;
-    flex-direction: column;
-    float: left;
-    position: absolute;
-    z-index: 8;
-}
-.content1 {
-    width: 100%;
-    height: 100%;
-    background: blue;
-    position: absolute;
-}
-
-.footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 40px;
+    flex-wrap: wrap; /* Permite que as imagens quebrem para a próxima linha em telas menores */
+    gap: 10px; /* Espaçamento entre as imagens */
+    padding: 20px;
+    flex-grow: 1; /* Permite que o conteúdo principal ocupe todo o espaço disponível */
+  }
+  
+  .content1 img {
+    max-width: 100%; /* Evita que as imagens ultrapassem seu contêiner */
+    height: auto; /* Mantém a proporção original das imagens */
+  }
+  
+  /* Estilo do rodapé */
+  .footer {
     background: orange;
-    z-index: 9;
+    height: 40px;
+    grid-column: 1 / span 2; /* O rodapé ocupa duas colunas do grid */
+  }
+  
+/* 
+Explicações:
+
+O reset de margens e preenchimentos (*) garante que não haja espaçamento indesejado em torno dos elementos.
+
+O flex-direction: column; no #container coloca os elementos filhos em uma coluna, empilhando-os verticalmente.
+
+O min-height: 100vh; no #container garante que o conteúdo ocupe pelo menos toda a altura da tela.
+
+flex: 0 0 250px; na .sideBar define a largura fixa da barra lateral.
+flex-wrap: wrap; na .content1 permite que as imagens quebrem para a próxima linha em telas menores.
+
+@media (max-width: 768px) é uma media query para estilos em telas menores que 768px.
+
+display: none; na .sideBar dentro da media query esconde a barra lateral em telas menores.
+
+Os outros estilos são autoexplicativos e destinam-se a fornecer uma boa aparência e funcionalidade em diferentes tamanhos de tela.
+
+Certifique-se de ajustar as dimensões, cores e estilos conforme necessário para o seu projeto.
+
+A propriedade `box-sizing` é usada para controlar como o tamanho total de um elemento é calculado, levando em consideração suas margens, bordas e preenchimentos. O valor mais comum para a propriedade `box-sizing` é `content-box`, onde o tamanho total do elemento inclui apenas o conteúdo interno, excluindo as margens, bordas e preenchimentos. No entanto, quando você define `box-sizing: border-box;`, o cálculo é alterado para incluir essas áreas adicionais.
+
+Quando você define `box-sizing: border-box;`, o tamanho total do elemento é calculado da seguinte forma:
+
+- **Content:** O tamanho do conteúdo interno (largura e altura) é o valor especificado. As margens, bordas e preenchimentos não afetarão o tamanho total do elemento.
+
+- **Padding:** O tamanho total do elemento inclui o conteúdo, os preenchimentos e as bordas.
+
+Isso é particularmente útil ao lidar com layouts responsivos e caixas que precisam ter dimensões específicas, mas também têm margens, preenchimentos e bordas. Ao utilizar `box-sizing: border-box;`, você pode ajustar o conteúdo, os preenchimentos e as bordas sem se preocupar em ultrapassar as dimensões desejadas do elemento.
+
+Por exemplo, ao definir:
+
+```css
+.box {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid black;
+  box-sizing: border-box;
 }
+```
+
+O elemento com a classe `.box` terá uma largura total de 200px, incluindo o preenchimento e a borda, em vez de ter sua largura aumentada para acomodar o preenchimento e a borda adicionais. Isso facilita o dimensionamento e o layout do conteúdo dentro da caixa.
+
+*/
