@@ -4,13 +4,11 @@
     padding: 0;
     box-sizing: border-box; /* " A propriedade box-sizing é usada para controlar como o tamanho total de um elemento é calculado, levando em consideração suas margens, bordas e preenchimentos " */
   }
-  
-  /* Estilo básico para o corpo do documento */
+ 
   body {
     font-family: Arial, sans-serif;
   }
   
-  /* Estilo do container principal */
   #container {
     display: grid; /* Define o elemento #container como um grid layout */
     grid-template-columns: 1fr 250px; /* Define duas colunas: conteúdo principal e barra lateral */
@@ -72,6 +70,8 @@ display: none; na .sideBar dentro da media query esconde a barra lateral em tela
 Os outros estilos são autoexplicativos e destinam-se a fornecer uma boa aparência e funcionalidade em diferentes tamanhos de tela.
 
 Certifique-se de ajustar as dimensões, cores e estilos conforme necessário para o seu projeto.
+*/
+/* Box-sizing: 
 
 A propriedade `box-sizing` é usada para controlar como o tamanho total de um elemento é calculado, levando em consideração suas margens, bordas e preenchimentos. O valor mais comum para a propriedade `box-sizing` é `content-box`, onde o tamanho total do elemento inclui apenas o conteúdo interno, excluindo as margens, bordas e preenchimentos. No entanto, quando você define `box-sizing: border-box;`, o cálculo é alterado para incluir essas áreas adicionais.
 
@@ -96,4 +96,39 @@ Por exemplo, ao definir:
 
 O elemento com a classe `.box` terá uma largura total de 200px, incluindo o preenchimento e a borda, em vez de ter sua largura aumentada para acomodar o preenchimento e a borda adicionais. Isso facilita o dimensionamento e o layout do conteúdo dentro da caixa.
 
+*/
+
+/* grid:
+
+O Grid Layout é um sistema de layout bidimensional que permite organizar os elementos em linhas e colunas em um espaço definido. Com o Grid Layout, você pode criar layouts complexos e flexíveis de maneira mais eficiente do que com técnicas tradicionais, como floats ou posicionamento absoluto.
+
+Principais conceitos do Grid Layout:
+
+Container Grid: O elemento pai que contém os itens do grid é chamado de "container grid". Ele define o contexto do layout e é onde você aplica propriedades de grid.
+
+Grid Items: São os elementos filhos do container grid que serão organizados em linhas e colunas. Cada grid item pode ocupar uma ou mais células do grid.
+
+Grid Lines: São as linhas horizontais e verticais que dividem o grid em células. Elas são numeradas começando de 1.
+
+Grid Cells: São os espaços retangulares formados pela interseção das linhas horizontais e verticais do grid.
+
+Grid Tracks: São as colunas e linhas individuais que formam as estruturas do grid. Uma trilha é definida entre duas linhas adjacentes.
+
+Grid Areas: São espaços retangulares compostos por várias células. Você pode nomear essas áreas e posicionar os itens do grid nelas.
+
+Grid Lines de Posicionamento: Você pode usar números positivos ou negativos para definir onde um item do grid começa ou termina em relação às grid lines.
+
+Fractional Unit (fr): É uma unidade de medida utilizada no Grid Layout para definir o tamanho das colunas e linhas de forma proporcional.
+
+Explicit Grid: O grid definido explicitamente é aquele em que você define o número de colunas e linhas no grid.
+
+Implicit Grid: O grid implícito é aquele em que as colunas e linhas são criadas automaticamente conforme necessário para acomodar os itens.
+
+Vantagens do Grid Layout:
+
+Estruturas complexas: O Grid Layout permite criar layouts complexos com alinhamento preciso de itens.
+Responsividade: É altamente responsivo, permitindo que as colunas e linhas se ajustem a diferentes tamanhos de tela.
+Ordenação independente: Os itens do grid podem ser reorganizados independentemente da ordem no HTML, facilitando o design responsivo.
+Controle granular: Controle preciso sobre o posicionamento dos itens, incluindo alinhamento, espaçamento e ordem.
+Em resumo, o Grid Layout é uma ferramenta poderosa para criar layouts flexíveis e avançados em projetos web. Ele é amplamente suportado pelos navegadores modernos e oferece uma maneira eficaz de criar designs complexos de forma mais estruturada e controlada.
 */
