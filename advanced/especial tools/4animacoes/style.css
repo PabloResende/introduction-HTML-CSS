@@ -13,7 +13,7 @@
 }
 
 @keyframes animacao-caixa2 {
-    from {
+    from { 
         background: purple;
         border-radius: 0px;
     }
